@@ -1,0 +1,23 @@
+<%- include header%>
+    <%=error%>
+<div class="nav_list">
+    <ul>
+        <li><div><a href="edit">编辑文章</a></div></li>
+        <li><div><a href="">删除文章</a></div></li>
+        <li><div><a href="">垃圾箱</a></div></li>
+        <li><div><a href="logout">退出登录</a></div></li>
+    </ul>
+</div>
+     <div class="article">
+	     <form method="post">
+         <p>文章标题</p>
+         <input type="text" name="title">
+         <p>文章内容</p>
+         <textarea rows="20" cols="140" name="post"></textarea>
+		 <div class="submit">
+		 <a><button type="submit"  class="btn btn-success btn-lg">发表</button></a>
+		  <a><button type="reset"  class="btn btn-success btn-lg">舍弃</button></a>
+		 </div>
+		 </form>
+     </div>
+<%- include footer%>

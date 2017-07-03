@@ -1,0 +1,42 @@
+body {   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
+/*index*/
+.head{background-image:url(../images/1.jpg);background-size:1300px 250px;width:1300px;height:200px;}
+.head img{width: 300px;height:100px;margin-left: 100px;margin-top: 50px }
+.head p{margin-left: 440px;margin-top: -70px;font-size: 40px;color:red;font-family: 仿宋}
+.container{width: 1200px;height: 190px;margin-top:2px}
+.content h3{font-family: 黑体;font-size: 28px;color: #1b6d85;margin-left: 50px;margin-top: 30px;}
+.content p{font-family: 黑体;font-size: 22px;color:#1b6d85;margin-left: 50px;}
+.content{ background-image:url(../images/3.jpg);background-repeat: no-repeat;background-size: 880px 190px}
+.container .list{margin-left:60px;}
+.container .clock{float: left;width: 250px;height: 190px;margin-left: 870px;margin-top: -145px;background-color: #8a6d3b}
+.nav_list{margin-left:70px;width:880px;height:40px;background-color:grey;line-height: 40px;margin-top:-8px}
+.nav_list ul{}
+.nav_list ul li{float: left;list-style-type: none;padding-left: 80px;color:#4cae4c;text-align:center}
+.nav_list ul li div{width:100px;height:40px;}
+.nav_list ul li div:hover{background-color: #1b6d85;}
+.nav_list ul li a{color:#4cae4c;font-size:17px;font-weight: bold;text-underline: none;cursor:help }
+
+.nav{float: right;}
+.nav ul{border: 1px solid #4cae4c;width: 250px;list-style-type: none;margin-right: 105px;margin-top: 10px}
+.nav ul li{margin-left:-40px;color:#d43f3a;font-size:25px;height: 70px;line-height: 70px;text-align: center;border-bottom: 1px solid #4cae4c;width: 250px;padding-right: 20px;margin-right: 20px}
+.nav ul li div{width:250px;height:70px;}
+.nav ul li div a{text-underline: none;color: #d43f3a;}
+.nav ul li div:hover{background-color: #1b6d85;}
+.article{ margin-left:90px;}
+
+.article p{ color:#999; font-weight:bold}
+.article input{ width:850px;}
+.article .submit{ margin-left:300px;}
+.article .submit a{ margin-top:-40px;padding-left:50px;}
+.post{ margin-left:70px; border:1px solid #0F6; width:880px; margin-top:10px;}
+.post p{ padding-left:10px;}
+.post .bottom{ border-bottom:1px solid #0F6}
+.web_nav{ border:2px solid #0F0; margin-left:200px; width:800px;}
+.web_nav dl{ padding-top:15px;}
+.web_nav dd{ float:left; padding-left:50px}
+.web_nav dd a{ font-size:15px; font-weight:bold; color:#9C9}
+.web_nav dd a:hover{ color:#F00}
+.reg{margin-left: 400px;margin-top: 40px;width:500px;}
+.reg a{margin-left: 350px}
+.music{margin-left:90px;margin-top: 10px;width: 800px}
+.music p{border-bottom: dashed 1px #8a6d3b}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+	<link rel='stylesheet' href="/stylesheets/bootstrap.min.css">
+  </head>
+  <body>
+    <div class="head">
+	    <img src="../images/2.jpg">
+	    <p>花开花落，云卷云舒</p>
+	</div>
+    <div class="nav_list">
+        <ul>
+            <li><div><a href="person">个人主页</a></div></li>
+            <li><div><a href="music">音乐</a></div></li>
+            <li><div><a href="video">视频</a></div></li>
+            <li><div><a href="navigation">网址导航</a></div></li>
+        </ul>
+    </div>
+	<div class="container content">
+
+            <h3>欢迎来到林智欢博客！</h3>
+            <p>记录下生活的每一天</p>
+            <div class="list">
+                <a href="login"><button class="btn  btn-success">登录</button></a>
+                <a href="reg"><button class="btn  btn-success">注册</button></a>
+            </div>
+     <div class="clock">
+    <IFRAME border=0 frameBorder=0 height=189 scrolling=no
+            src="http://www.1t2t.com/1t/so6.htm"
+            width=250></IFRAME>
+     </div>
+    </div>
+
+     <div class="nav">
+          <ul>
+              <li><div><a href="http://www.w3school.com.cn/html/index.asp">HTML</a></div></li>
+              <li><div><a href="http://www.w3school.com.cn/css/index.asp">CSS</a></div></li>
+              <li><div><a href="http://www.w3school.com.cn/js/index.asp">JavaScript</a></div></li>
+              <li><div><a href="http://www.w3school.com.cn/jquery/index.asp">JQuery</a></div></li>
+              <li><div><a href="http://www.runoob.com/bootstrap/bootstrap-intro.html">Bootstrap</a></div></li>
+              <li><div><a href="https://cn.vuejs.org/v2/guide/">VUE2</a></div></li>
+              <li><div><a href="http://www.expressjs.com.cn/">NODE.JS</a></div></li>
+          </ul>
+     </div>
+	 <div class="post">
+	 <% posts.forEach(function (post, index) { %>
+         <p><h2><a href="/u/<%= post.name %>/<%= post.time.day %>/<%= post.title %>"><%= post.title %></a></h2></p>
+           <p>
+        作者：<a href="/u/<%= post.name %>"><%= post.name %></a> |
+       日期：<%= post.time.minute %>
+     </p>
+	     <div class="bottom">
+          <p ><%- post.post %></p>
+		  </div>
+      <% }) %>
+	  </div>
+  </body>
+</html>
